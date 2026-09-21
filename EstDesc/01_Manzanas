@@ -1,0 +1,22 @@
+import numpy as np # type: ignore
+import statistics as stast
+
+# Pesos de las manzanas en gramos
+manzanas = [150, 180, 200, 170, 150, 190, 200, 210, 150, 180]
+
+# =====================================================
+# Estadísticas descriptivas
+# =====================================================
+media = np.mean(manzanas)          # promedio
+mediana = np.median(manzanas)      # valor central
+moda = stast.mode(manzanas)        # valor más común
+desviacion = np.std(manzanas)      # variabilidad
+
+# =====================================================
+# Resultados
+# =====================================================
+print(f"Análisis de la cosecha de manzanas")
+print(f"Media: {media} gramos")
+print(f"Mediana: {mediana} gramos")
+print(f"Moda: {moda} gramos")
+print(f"Desviación estándar: {desviacion:.3f} gramos")
